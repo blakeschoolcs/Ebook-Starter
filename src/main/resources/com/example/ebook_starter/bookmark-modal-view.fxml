@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.ebook_starter.BookmarkModalController"
+      spacing="10" alignment="center">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <Text text="Add Bookmark"/>
+    <Label text="Page Number:"/>
+    <TextField fx:id="pageNumberField" editable="false"/>
+    <Label text="Creation Time:"/>
+    <TextField fx:id="creationTimeField" editable="false"/>
+    <Label text="Note:"/>
+    <TextField fx:id="noteField"/>
+    <Label text="Keywords (comma-separated):"/>
+    <TextField fx:id="keywordsField"/>
+    <Button text="Add Bookmark" onAction="#handleAddBookmark"/>
+</VBox>
